@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>St.Johns English School</title>
+
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(15, 22, 47, 0.7),rgba(0, 12, 59, 0.7)), url(banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  width: 100px;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+  
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+color: white;
+text-decoration: none;
+font-size: 13px;
+font-weight: bold;
+}
+
+.nav-links ul li::after{
+ content: '';
+ width: 100%;
+ height: 2px;
+ background: #f4c536;
+ display: block;
+ margin: auto;
+ transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.text-box{
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 55px;
+	font-family: 'Cinzel Decorative', cursive;
+  font-weight: 100;
+}
+
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 25px;
+  color: white;
+}
+
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 2px solid #006aff;
+  padding: 12px 34px;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: bolder;
+  font-size: 15px;
+  width: 250px;
+}
+
+.hero-btn:hover{
+  border: 2px solid #ffffff ;
+  background-color: rgb(255, 255, 255);
+  color: black;
+font-weight: bolder;
+  transition: 0.8s;
+  font-size: 18px;
+}
+
+#sc:hover{
+  background-image: url(https://cdn-acgla.nitrocdn.com/bvIhcJyiWKFqlMsfAAXRLitDZjWdRlLX/assets/static/optimized/rev-5131b73/wp-content/uploads/2021/01/dna-molecule-1.jpg);
+  background-position: center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
+}
+
+#mt:hover{
+  background-image: url(https://img.jagranjosh.com/imported/images/E/Articles/Math-640x315_September_2018.jpg);
+  background-position: center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
+}
+
+#cs:hover{
+  background-image: url(https://pilbox.themuse.com/image.jpg?filter=antialias&h=422&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F01212022-1047259374-coding-classes_scanrail.jpg%3Fv%3D64b82fea51f9cabd656cae92018d4600d2a1ce8b&w=767);
+  background-position: center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
+  transition: 0.9s;
+}
+
+#lb:hover{
+  background-image: url(https://i0.wp.com/calmatters.org/wp-content/uploads/2021/04/library.jpg?fit=2448%2C1140&ssl=1);
+  background-position: center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
+}
+
+#scb:hover{
+  background-image: url(https://d3i6fh83elv35t.cloudfront.net/static/2020/08/GettyImages-1227729200-1024x682.jpg);
+  background-position: center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
+}
+
+nav .fa{
+  display: none;
+}
+  
+@media(max-width: 700px) {
+   .text-box li{
+   font-size: 20px;
+   }
+  .nav-links ul li{
+  display: block;
+  }
+  .nav-links{
+  position: absolute;
+   background: #fc9f4e;
+    height: 100vh;
+     width: 200px;
+      top: 0; 
+      right: -200px; 
+      text-align: left;
+       z-index: 2;
+  }
+
+  nav .fa{
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul{
+  padding: 30px;
+  }
+}
+
+#aboutschool{
+  font-size: 19px;
+  text-align: justify;
+}
+
+#members{
+  font-size: 35px;
+  color: aqua;
+}
+#tribute{
+  font-size: 18px;
+  text-align: left;
+}
+#tri{
+  font-size: 45px;
+}
+</style>
+<body>
+  <section class="header">
+  
+    <div class="text-box">
+  
+      <a href="science.html" class="hero-btn" id="sc">SCIENCE LABORATORY</a><br><br>
+      <a href="math.html" class="hero-btn" id="mt">MATHEMATICS LABORATORY</a><br><br>
+      <a href="cs.html" class="hero-btn" id="cs">COMPUTER SCIENCE LABORATORY</a><br><br>
+      <a href="library.html" class="hero-btn" id="lb">LIBRARY</a>
+        <br><br>
+        <a href="bus.html" class="hero-btn" id="scb">SCHOOL BUS</a>
+        <br><br><br><br>
+        <a href="index.html" class="hero-btn">RETURN</a>
+    </div>
+
+  </section>
+
+  
+</body>
+</html>
